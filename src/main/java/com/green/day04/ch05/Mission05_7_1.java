@@ -11,8 +11,8 @@ public class Mission05_7_1 {
             8단은 8 x 8까지,
             출력하도록 작성하자.
          */
-        for (int i = 0; i < 9; i +=2) {
-            for (int z = 1; z < 10; z++) {
+        for (int i= 2; i < 9; i+=2) {
+            for (int z = 0; z < 10; z++) {
                 if (z <= i) {
                     System.out.printf("%d x %d = %d\n", i, z, i * z);
                 } else {

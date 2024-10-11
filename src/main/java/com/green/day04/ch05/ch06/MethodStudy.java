@@ -16,18 +16,26 @@ public class MethodStudy {
     (리턴타입 + 메소드명 + 파라미터): 선언부
     메소드를 크게 두 분류
     - void 메소드  : 리턴하는 값이 없다.(결과값이 없다.) 실행커서가 단독으로 호출한 곳으로 돌아가는데
-    -비void 메소드 : 리턴하는 값이 있다 (결과값이 있다.)
+    -return 메소드( 비void 메소드 ): 리턴하는 값이 있다 (결과값이 있다.)
 
      */
     public static void main(String[] args) {
         sum(5, 7);
         sum(15, 17);//sum메소드 호출
+        int result = returnSum(5, 7);
+        System.out.println("result:" + result);
+        System.out.println("result2:" + returnSum(15, 17));
+        System.out.println("result2: " + 32);
     }
 
     //void메소드
     //sum이라는 이름의 static 메소드를 정의(파라미터 2개)
     static void sum(int n1, int n2) {
         System.out.printf("%d + %d = %d\n", n1, n2, (n1 + n2));
+    }
+
+    static int returnSum(int n1, int n2) {
+        return n1 + n2;
     }
 
 }
