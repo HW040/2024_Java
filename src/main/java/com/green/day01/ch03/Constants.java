@@ -12,5 +12,15 @@ public class Constants {
         System.out.printf("상수2: %c\n", CONST_CHAR);
         System.out.printf("상수3: %d\n", CONST_ASSIGNED);
 
+        final int max_size = 200;
+        final char const_char = '하';
+        final int const_assigned;
+
+        const_assigned =15;
+
+        System.out.printf("하1: %d\n", max_size);
+        System.out.printf("하2: %c\n", const_char);
+        System.out.printf("하3: %d\n", const_assigned);
+
     }
 }
