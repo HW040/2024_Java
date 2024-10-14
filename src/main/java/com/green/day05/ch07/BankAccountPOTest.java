@@ -15,9 +15,7 @@ public class BankAccountPOTest {
         System.out.println("deposit: "
                 + deposit);
 
-        deposit = BankAccountPO.withdraw(3000);
-        System.out.println("deposit: "
-                + deposit);
-        BankAccountPO.checkMyBalance();
+        deposit = BankAccountPO.checkMyBalance();
+        System.out.println("잔액2: " + deposit);
     }
 }
