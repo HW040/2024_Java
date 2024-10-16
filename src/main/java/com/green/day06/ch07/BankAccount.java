@@ -9,7 +9,7 @@ public class BankAccount {
         balance += amount;
     }
 
-    void withdtaw(int amount) {
+    void withdraw(int amount) {
         balance -= amount;
     }
 

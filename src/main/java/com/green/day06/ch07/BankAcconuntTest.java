@@ -13,7 +13,7 @@ public class BankAcconuntTest {
         BankAccount ba3 = new BankAccount();
         ba3.checkMyBalance(); //balande: ??
         ba3.deposit(40000);
-        ba3.withdtaw(1000);
+        ba3.withdraw(1000);
         ba3.checkMyBalance(); //balance: 39000
 
 
