@@ -10,7 +10,7 @@ public class StringInst {
         System.out.println();
 
         System.out.println(str2);
-        System.out.println(str2.length());
+        System.out.println(str2.length()); //length 길이 구해주는거
         System.out.println();
 
         showString("Funny String");

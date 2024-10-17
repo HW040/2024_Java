@@ -29,6 +29,8 @@ public class StringStudy {
         System.out.println(".의 위치값: " + fileNm.indexOf("."));
         // 왼쪽에서 오른쪽 방향으로 가장 빨리 찾은 index값을 리턴
 
+        System.out.println("마지막 .의 위치값 " + fileNm.lastIndexOf("."));
+
 
 
         System.out.println("------------------");
@@ -36,10 +38,10 @@ public class StringStudy {
         String str7 = "LExi";
         String str8 = "Lexi";
 
+        System.out.println(str7.equals(str8));
         System.out.println(str7.compareTo(str8));
         System.out.println(str8.compareTo(str7));
         System.out.println(str7.compareTo("LExi")); //0이 나오면 같은 문자열이다.
-        System.out.println(str7.equals(str8));
         System.out.println(str7.equalsIgnoreCase(str8)); // 대소문자 구분없이 같은지 비교
 
         System.out.println("------------------------------");
@@ -47,5 +49,13 @@ public class StringStudy {
         int n = 10;
         String str9 = n + "";
         String str10 = String.valueOf(n); //모든 타입을 String으로 변경할 수 있다.
+
+        System.out.println("----------------------------");
+
+        String str11 = "abcdefgcd";
+        String str11Result = str11.replace("cd", "CD"); //replace -->cd를 CD로 변환하겠다
+        System.out.println("str11Result: " + str11Result);
+
+
     }
 }
