@@ -16,7 +16,7 @@ public class ShuffleArray {
         for (int i = 0; i < arr.length; i++) {
             arr[i] = (i + 1);
         }
-        System.out.printf("default : %s\n",Arrays.toString(arr));
+        System.out.printf("default : %s\n", Arrays.toString(arr));
 
         for (int i = 0; i < arr.length; i++) {
             int rIdx = (int) (Math.random() * arr.length);
