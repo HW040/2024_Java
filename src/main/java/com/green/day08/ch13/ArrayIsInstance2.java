@@ -21,7 +21,7 @@ public class ArrayIsInstance2 {
 }
 //모든 클래스는 무조건 Obiect를 상속 받는다
 class Box {
-    private String conts;
+    private String conts; //생성자는 클래스명이랑 같아야 하고,리턴타입을 못 넣는다
 
     Box(String conts) {
         this.conts = conts;

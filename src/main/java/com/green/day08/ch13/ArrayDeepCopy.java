@@ -5,11 +5,11 @@ import org.w3c.dom.ls.LSOutput;
 public class ArrayDeepCopy {
     public static void main(String[] args) {
         int[] arr = {10, 15, 23, 1, 8};
+        int[] copyArr = new int[arr.length]; //arr과 같은 크기의 int배여을 만들자.
 
-        int[] copyArr = new int[arr.length];
-
-        for (int i = 0; i < arr.length; i++)
+        for (int i = 0; i < arr.length; i++) {
             copyArr[i] = arr[i];
+        }
 
         System.out.println("arr == copyArr: " + (arr == copyArr)); //false
         //참조변수끼리의 == 비교는 동일성(같은 주소값)을 묻는다.
