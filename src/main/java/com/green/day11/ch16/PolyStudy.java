@@ -68,8 +68,25 @@ public class PolyStudy {
         System.out.println(ani4 instanceof BullDog); // false
         System.out.println(ani4 instanceof Bird); // true
 
+        Cat cat2 = new Cat();
+        Dog dog2 = new Dog();
+        BullDog bullDog = new BullDog();
+        Bird bird = new Bird();
+
+        animalCrying(cat2);
+        animalCrying(dog2);
+        animalCrying(bullDog);
+        animalCrying(bird);
+
         System.out.println("--끝--");
 
+    }
+    static void animalCrying(Animal ani) {
+        ani.crying();
+        if (ani instanceof BullDog) {
+            BullDog bullDog = (BullDog) ani;
+            bullDog.jump();
+        }
     }
 }
 
