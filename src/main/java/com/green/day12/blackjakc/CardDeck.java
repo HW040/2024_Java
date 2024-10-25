@@ -45,9 +45,9 @@ public class CardDeck {
 
 
         //enhanced-for문으로 card객체  주소값 전부 출력
-        for (Card c : cards) {
-            System.out.println(c);
-        }
+        //for (Card c : cards) {
+            //System.out.println(c);
+        //}
     }
     private void shuffle() {
         for (int i = 0; i <cards.length ; i++) {

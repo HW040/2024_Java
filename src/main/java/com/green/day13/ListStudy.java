@@ -13,8 +13,10 @@ public class ListStudy {
     둘 class는 결과는 똑같은데 처리방식이 다르다.
     LinkedList는 Node방식으로 데이터를 다루고
     ArrayList는 Array(배열)방식으로 데이터를 다룬다
+
     LinkedList는 수정 위주의 작업이 많으면 유리하고
     ArrayList는 읽기 위주의 작업이 많으면 유리하다.
+
      List 변수명 = new ArrsayList();
      List 변수명 = new LinkdList();
      이렇게 작성이 가능하다.

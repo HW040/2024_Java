@@ -24,6 +24,7 @@ class CardTest2{
         gamer.receiveCard(cd.draw());
         gamer.receiveCard(cd.draw());
         gamer.showYourCards();
+        System.out.println(gamer.getPoint()); //point값이 출력될 수 있도록.
 
         List<Card> list = gamer.openCards();
     }
@@ -36,5 +37,6 @@ class CardTest3{
         dealer.receiveCard(cd.draw());
         dealer.receiveCard(cd.draw());
         dealer.showYourCards();
+
     }
 }

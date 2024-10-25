@@ -7,8 +7,8 @@ public class Gamer {
     //Card객체 주소값 여러개 저장할 수 있어야 합니다.
     //ArrayList 사용할꺼임
     //멤버필드 선언. 변수명은 cards
-    private final List<Card> cards;
-    private int point;
+    protected final List<Card> cards;
+    protected int point;
 
     public Gamer() {
         cards = new ArrayList();
@@ -35,6 +35,16 @@ public class Gamer {
 
     public List<Card> openCards() {
         return cards;
+    }
+    public int getPoint() {
+
+        return point;
+    }
+}
+class CardTest4{
+    public static void main(String[] args) {
+        Rule rule = new Rule();
+        rule.getWinner(null, null);
     }
 }
 
